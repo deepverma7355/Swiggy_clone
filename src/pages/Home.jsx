@@ -2,6 +2,7 @@ import FoodCategories from "../components/FoodCategories";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
+import DineoutSection from "../components/DineoutSection";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       </div>
 
       <FoodCategories />
+      <DineoutSection/>
     </>
   );
 };
