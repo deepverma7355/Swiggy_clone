@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
 import DineoutSection from "../components/DineoutSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
 
       <FoodCategories />
       <DineoutSection/>
+      <Footer/>
     </>
   );
 };
