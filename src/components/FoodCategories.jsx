@@ -12,24 +12,24 @@ import pasta from "../assets/Pasta.png";
 import paratha from "../assets/Paratha.png";
 
 const categories = [
-  { name: "Biryani", img: biryani },
-  { name: "Pizza", img: pizza },
-  { name: "Burger", img: burger },
-  { name: "Cake", img: cake },
-  { name: "Rolls", img: rolls },
-  { name: "Noodles", img: noodles },
-  { name: "Kebab", img: kebab },
-  { name: "Tea", img: tea },
-  { name: "Poori", img: poori },
-  { name: "Dosa", img: doosa },
-  { name: "Pasta", img: pasta },
-  { name: "Paratha", img: paratha },
+  { img: biryani },
+  { img: pizza },
+  { img: burger },
+  { img: cake },
+  { img: rolls },
+  { img: noodles },
+  { img: kebab },
+  { img: tea },
+  { img: poori },
+  { img: doosa },
+  { img: pasta },
+  { img: paratha },
 ];
 
 const FoodCategories = () => {
   return (
     <section className="bg-white px-16 py-12">
-      
+
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-bold">
           Order our best food options
@@ -45,7 +45,7 @@ const FoodCategories = () => {
             <img
               src={item.img}
               alt={item.name}
-              className="w-32 h-32 object-contain hover:scale-105 transition"
+              className="w-34 h-34 object-contain hover:scale-105 transition"
             />
             <p className="mt-3 text-sm font-medium">
               {item.name}
