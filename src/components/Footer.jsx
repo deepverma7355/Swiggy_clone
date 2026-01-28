@@ -73,24 +73,24 @@ const Footer = () => {
                     </ul>
 
                     <h3 className="font-bold mt-6 mb-3">Social Links</h3>
-                    <div className="flex gap-4 text-xl">
-                        <a href="https://www.linkedin.com/company/swiggy-in/" target="_blank" rel="noopener noreferrer">
+                    <div className="flex gap-4 text-xl ">
+                        <a href="https://www.linkedin.com/company/swiggy-in/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition">
                             <FaLinkedin />
                         </a>
 
-                        <a href="https://www.instagram.com/swiggyindia/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/swiggyindia/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition">
                             <FaInstagram />
                         </a>
 
-                        <a href="https://www.facebook.com/swiggy.in" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/swiggy.in" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition">
                             <FaFacebook />
                         </a>
 
-                        <a href="https://in.pinterest.com/swiggyindia/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://in.pinterest.com/swiggyindia/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition">
                             <FaPinterest />
                         </a>
 
-                        <a href="https://twitter.com/swiggy_in" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/swiggy_in" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition">
                             <FaTwitter />
                         </a>
                     </div>
@@ -100,7 +100,7 @@ const Footer = () => {
 
             {/* Bottom Section */}
             <div className="border-t mt-10 py-6 px-6 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-                <p className="text-xl font-bold mb-4 md:mb-0">
+                <p className="text-xl font-bold mb-4 md:mb-0 hover:scale-105 transition">
                     For better experience, download the Swiggy app now
                 </p>
 
