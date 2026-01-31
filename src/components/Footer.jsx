@@ -5,7 +5,8 @@ import {
     FaPinterest,
     FaTwitter,
 } from "react-icons/fa"
-
+import playstoreimg from "../assets/icon-GooglePlay_1_zixjxl.avif"
+import appstoreimg from "../assets/icon-AppStore_lg30tv.avif"
 const Footer = () => {
     return (
         <footer className="bg-gray-100 text-gray-700 pt-12">
@@ -111,8 +112,19 @@ const Footer = () => {
                         rel="noopener noreferrer"
                     >
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            src={playstoreimg}
                             alt="Play Store"
+                            className="h-12 cursor-pointer hover:scale-105 transition"
+                        />
+                    </a>
+                    <a
+                        href="https://apps.apple.com/in/app/swiggy-food-instamart-dineout/id989540920"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src={appstoreimg}
+                            alt="App Store"
                             className="h-12 cursor-pointer hover:scale-105 transition"
                         />
                     </a>
@@ -124,4 +136,3 @@ const Footer = () => {
 }
 
 export default Footer
-
