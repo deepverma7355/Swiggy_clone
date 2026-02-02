@@ -54,21 +54,17 @@ const Pizza = () => {
         Cheelicious pizzas to make every day extraordinary.
       </p>
 
-     
-
-      {/* Count */}
       <h2 className="text-2xl font-bold mb-6">
         {restaurants.length} Restaurants to explore
       </h2>
 
-      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {restaurants.map((res) => (
           <div
             key={res.id}
             className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition cursor-pointer"
           >
-            {/* Image */}
+          
             <div className="relative">
               <img
                 src={res.image}
@@ -80,7 +76,6 @@ const Pizza = () => {
               </span>
             </div>
 
-            {/* Info */}
             <div className="p-4">
               <h3 className="font-bold text-lg">{res.name}</h3>
               <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
@@ -101,3 +96,4 @@ const Pizza = () => {
 };
 
 export default Pizza;
+
