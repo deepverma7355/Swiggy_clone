@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
-import api from "../api/axios"   // 👈 your axios instance
+import api from "../api/axios" 
 
 const Register = () => {
   const navigate = useNavigate()
@@ -10,11 +10,11 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState("")
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
+  const [showPassword, setShowPassword] = useState(false) 
 
   const handleRegister = async () => {
     setError("")
-
-    // ✅ Frontend validations
+    
     if (!email || !password || !confirmPassword) {
       setError("All fields are required")
       return
@@ -76,7 +76,7 @@ const Register = () => {
         />
 
         <input
-          type="password"
+          type={showPassword ? "text" : "password"}
           placeholder="Password"
           className="w-full border px-4 py-2 rounded-lg mb-4"
           value={password}
@@ -84,12 +84,25 @@ const Register = () => {
         />
 
         <input
-          type="password"
+          type={showPassword ? "text" : "password"}
           placeholder="Confirm Password"
-          className="w-full border px-4 py-2 rounded-lg mb-4"
+          className="w-full border px-4 py-2 rounded-lg mb-2"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
+
+        <div className="flex items-center mb-4">
+          <input
+            type="checkbox"
+            id="showPassword"
+            checked={showPassword}
+            onChange={() => setShowPassword(!showPassword)}
+            className="mr-2"
+          />
+          <label htmlFor="showPassword" className="text-sm text-gray-600">
+            Show password
+          </label>
+        </div>
 
         <button
           onClick={handleRegister}
