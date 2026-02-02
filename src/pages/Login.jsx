@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
-  const [showPassword, setShowPassword] = useState(false) // 👈 added
+  const [showPassword, setShowPassword] = useState(false) 
 
   const handleLogin = async () => {
     setError("")
@@ -91,3 +91,4 @@ const Login = () => {
 }
 
 export default Login
+
