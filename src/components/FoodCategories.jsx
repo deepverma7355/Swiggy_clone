@@ -12,8 +12,8 @@ import pasta from "../assets/Pasta.png";
 import paratha from "../assets/Paratha.png";
 
 const categories = [
-  { img: biryani },
-  { img: pizza },
+  { img: biryani , path: "/biryani"},
+  { img: pizza , path: "/pizza"},
   { img: burger },
   { img: cake },
   { img: rolls },
@@ -26,10 +26,11 @@ const categories = [
   { img: paratha },
 ];
 
+import { Link } from "react-router-dom";
+
 const FoodCategories = () => {
   return (
     <section className="bg-white px-16 py-12">
-
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-bold">
           Order our best food options
@@ -38,7 +39,8 @@ const FoodCategories = () => {
 
       <div className="grid grid-cols-6 gap-8">
         {categories.map((item, index) => (
-          <div
+          <Link
+            to={item.path}
             key={index}
             className="flex flex-col items-center cursor-pointer"
           >
@@ -50,12 +52,10 @@ const FoodCategories = () => {
             <p className="mt-3 text-sm font-medium">
               {item.name}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
-
     </section>
   );
 };
-
-export default FoodCategories;
+export default FoodCategories
