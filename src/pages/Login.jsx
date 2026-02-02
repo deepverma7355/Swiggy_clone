@@ -9,6 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
+  const [showPassword, setShowPassword] = useState(false) // 👈 added
 
   const handleLogin = async () => {
     setError("")
@@ -49,12 +50,25 @@ const Login = () => {
         />
 
         <input
-          type="password"
+          type={showPassword ? "text" : "password"}
           placeholder="Password"
-          className="w-full border px-4 py-2 rounded-lg mb-4"
+          className="w-full border px-4 py-2 rounded-lg mb-2"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+
+        <div className="flex items-center mb-4">
+          <input
+            type="checkbox"
+            id="showPassword"
+            checked={showPassword}
+            onChange={() => setShowPassword(!showPassword)}
+            className="mr-2"
+          />
+          <label htmlFor="showPassword" className="text-sm text-gray-600">
+            Show password
+          </label>
+        </div>
 
         <button
           onClick={handleLogin}
