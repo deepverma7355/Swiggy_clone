@@ -14,16 +14,16 @@ import paratha from "../assets/Paratha.png";
 const categories = [
   { img: biryani , path: "/biryani"},
   { img: pizza , path: "/pizza"},
-  { img: burger },
-  { img: cake },
-  { img: rolls },
-  { img: noodles },
-  { img: kebab },
-  { img: tea },
-  { img: poori },
-  { img: doosa },
-  { img: pasta },
-  { img: paratha },
+  { img: burger , path: "/burger"},
+  { img: cake , path: "/cake"},
+  { img: rolls , path: "/rolls"},
+  { img: noodles , path: "/noodles"},
+  { img: kebab , path: "/kebab"},
+  { img: tea , path: "/tea"},
+  { img: poori , path: "/poori"},
+  { img: doosa , path: "/doosa"},
+  { img: pasta , path: "/pasta"},
+  { img: paratha , path: "/paratha"},
 ];
 
 import { Link } from "react-router-dom";
