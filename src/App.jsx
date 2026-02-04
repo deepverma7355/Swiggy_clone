@@ -8,6 +8,8 @@ import Burger from "./pages/Burger"
 import Cake from "./pages/Cake"
 import Roll from "./pages/Roll"
 import Noodels from "./pages/Noodles"
+import Kebab from "./pages/Kebab"
+
 function App() {
   return (
     <Routes>
@@ -20,6 +22,7 @@ function App() {
       <Route path="/cake" element={<Cake />} />
       <Route path="/rolls" element={<Roll />} />
       <Route path="/noodles" element={<Noodels />} />
+      <Route path="/kebab" element={<Kebab />} /> 
     </Routes>
   )
 }
