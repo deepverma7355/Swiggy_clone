@@ -10,6 +10,7 @@ import Roll from "./pages/Roll"
 import Noodels from "./pages/Noodles"
 import Kebab from "./pages/Kebab"
 import Chai from "./pages/Chai"
+import Poori from "./pages/Poori"
 function App() {
   return (
     <Routes>
@@ -24,6 +25,7 @@ function App() {
       <Route path="/noodles" element={<Noodels />} />
       <Route path="/kebab" element={<Kebab />} /> 
       <Route path="/chai" element={<Chai />} />
+      <Route path="/poori" element={<Poori />} />
     </Routes>
   )
 }
