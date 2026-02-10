@@ -2,6 +2,7 @@ import Pizza1 from "../assets/pizza1.avif";
 import Pizza2 from "../assets/pizza2.avif";
 import Pizza3 from "../assets/pizza3.avif";
 import Pizza4 from "../assets/pizza4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Pizza = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       {/* Header */}
       <h1 className="text-4xl font-bold mb-2">Pizza</h1>
@@ -58,13 +60,14 @@ const Pizza = () => {
         {restaurants.length} Restaurants to explore
       </h2>
 
+      {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {restaurants.map((res) => (
           <div
             key={res.id}
             className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition cursor-pointer"
           >
-          
+            {/* Image */}
             <div className="relative">
               <img
                 src={res.image}
@@ -76,6 +79,7 @@ const Pizza = () => {
               </span>
             </div>
 
+            {/* Info */}
             <div className="p-4">
               <h3 className="font-bold text-lg">{res.name}</h3>
               <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
@@ -92,8 +96,9 @@ const Pizza = () => {
         ))}
       </div>
     </div>
+      <Footer />
+      </>
   );
 };
 
 export default Pizza;
-
