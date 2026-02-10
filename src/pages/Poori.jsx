@@ -2,6 +2,7 @@ import Poori1 from "../assets/poori1.avif";
 import Poori2 from "../assets/poori2.avif";
 import Poori3 from "../assets/poori3.avif";
 import Poori4 from "../assets/poori4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Poori = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Poori</h1>
@@ -94,6 +96,8 @@ const Poori = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
