@@ -2,6 +2,7 @@ import Burger1 from "../assets/burger1.avif";
 import Burger2 from "../assets/burger2.avif";
 import Burger3 from "../assets/burger3.avif";
 import Burger4 from "../assets/burger4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Burger = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       {/* Header */}
       <h1 className="text-4xl font-bold mb-2">Burger</h1>
@@ -94,7 +96,10 @@ const Burger = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
-};
+}
+  
 
 export default Burger;
