@@ -2,6 +2,7 @@ import Dosa1 from "../assets/dosa1.avif";
 import Dosa2 from "../assets/dosa2.avif"
 import Dosa3 from "../assets/dosa3.avif"
 import Dosa4 from "../assets/dosa4.avif"
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Dosa = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Dosa</h1>
@@ -94,6 +96,8 @@ const Dosa = () => {
         ))}
       </div>
     </div>
+    <Footer />
+     </>
   );
 };
 
