@@ -2,6 +2,7 @@ import Biryani1 from "../assets/biryani1.avif";
 import Biryani2 from "../assets/biryani2.avif";
 import Biryani3 from "../assets/biryani3.avif";
 import Biryani4 from "../assets/biryani4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,8 +48,9 @@ const restaurants = [
 
 const Biryani = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
-      {/* Header */}
+      
       <h1 className="text-4xl font-bold mb-2">Biryani</h1>
       <p className="text-gray-600 mb-6 font-bold">
         Taste these delectable classics, delectable biryanis to make your day.
@@ -58,14 +60,14 @@ const Biryani = () => {
         {restaurants.length} Restaurants to explore
       </h2>
 
-      {/* Grid */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {restaurants.map((res) => (
           <div
             key={res.id}
             className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition cursor-pointer"
           >
-            {/* Image */}
+          
             <div className="relative">
               <img
                 src={res.image}
@@ -77,7 +79,7 @@ const Biryani = () => {
               </span>
             </div>
 
-            {/* Info */}
+           
             <div className="p-4">
               <h3 className="font-bold text-lg">{res.name}</h3>
               <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
@@ -94,6 +96,8 @@ const Biryani = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
