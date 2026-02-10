@@ -2,6 +2,7 @@ import Cake1 from "../assets/cake1.avif";
 import Cake2 from "../assets/cake2.avif";
 import Cake3 from "../assets/cake3.avif";
 import Cake4 from "../assets/cake4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Cake = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Cake</h1>
@@ -93,7 +95,9 @@ const Cake = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
-};
+}
 
 export default Cake;
