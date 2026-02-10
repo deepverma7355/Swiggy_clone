@@ -2,6 +2,7 @@ import Kebab1 from "../assets/kebab1.avif";
 import Kebab2 from "../assets/kebab2.avif";
 import Kebab3 from "../assets/kebab3.avif";
 import Kebab4 from "../assets/kebab4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Kebab = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Kebab</h1>
@@ -94,6 +96,8 @@ const Kebab = () => {
         ))}
       </div>
     </div>
+      <Footer />
+      </>
   );
 };
 
