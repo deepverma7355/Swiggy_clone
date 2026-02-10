@@ -2,6 +2,7 @@ import Roll1 from "../assets/roll1.avif";
 import Roll2 from "../assets/roll2.avif";
 import Roll3 from "../assets/roll3.avif";
 import Roll4 from "../assets/roll4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Roll = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Roll</h1>
@@ -94,6 +96,8 @@ const Roll = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
