@@ -2,6 +2,7 @@ import Noodles1 from "../assets/noodels1.avif";
 import Noodles2 from "../assets/noodles.avif";
 import Noodles3 from "../assets/noodles3.avif";
 import Noodles4 from "../assets/noodles4.avif";
+import Footer from "../components/Footer";
 const restaurants = [
   {
     id: 1,
@@ -47,6 +48,7 @@ const restaurants = [
 
 const Noodles = () => {
   return (
+    <>
     <div className="max-w-7xl mx-auto px-6 py-10">
       
       <h1 className="text-4xl font-bold mb-2">Noodles</h1>
@@ -94,6 +96,8 @@ const Noodles = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
