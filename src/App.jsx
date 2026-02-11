@@ -12,6 +12,7 @@ import Kebab from "./pages/Kebab"
 import Chai from "./pages/Chai"
 import Poori from "./pages/Poori"
 import Dosa from "./pages/Dosa"
+import Pasta from "./pages/Pasta"
 function App() {
   return (
     <Routes>
@@ -28,6 +29,7 @@ function App() {
       <Route path="/chai" element={<Chai />} />
       <Route path="/poori" element={<Poori />} />
       <Route path="/dosa" element={<Dosa />} />
+      <Route path="/pasta" element={<Pasta />} />
     </Routes>
   )
 }
