@@ -13,6 +13,7 @@ import Chai from "./pages/Chai"
 import Poori from "./pages/Poori"
 import Dosa from "./pages/Dosa"
 import Pasta from "./pages/Pasta"
+import Paratha from "./pages/Paratha"
 function App() {
   return (
     <Routes>
@@ -30,6 +31,7 @@ function App() {
       <Route path="/poori" element={<Poori />} />
       <Route path="/dosa" element={<Dosa />} />
       <Route path="/pasta" element={<Pasta />} />
+      <Route path="/paratha" element={<Paratha />} />
     </Routes>
   )
 }
